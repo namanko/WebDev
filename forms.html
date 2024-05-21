@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Forms exercise</title>
+    <title>Fill your details</title>
 </head>
 <body>
     <center>
@@ -10,7 +10,7 @@
         <h1>Voter Details</h1>
         <section class="name">
             <label for="tb1">Enter name: </label><br>
-            <input type="text"  id="tb1"><br><br>
+            <input type="text"  id="tb1" pattern= "[A-Za-z]" required><br><br>
         </section>
 
         <section class="Age">
@@ -53,7 +53,7 @@
 
         <section class="Region">
             <label for="region">Region</label>
-            <input list="regions" type="text" name="region" id="region"><br><br>
+            <input list="regions" type="text" name="region" id="region" required><br><br>
             <datalist id="regions">
                 <option value="North"></option>
                 <option value="South"></option>
