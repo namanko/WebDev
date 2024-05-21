@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <center>
+    <form action="submission.html" method="POST">
+        <h1>Voter Details</h1>
+        <section class="name">
+            <label for="tb1">Enter name: </label><br>
+            <input type="text"  id="tb1"><br><br>
+        </section>
+
+        <section class="Age">
+            <span>Above 18? </span><br>
+            <label for="Yes">Yes</label>>
+            <input type="radio" name="age" value="Yes" id="Yes">
+            <label for="No">No</label>>
+            <input type="radio" name="age" value="No" id="No"><br><br>
+        </section>
+
+        <section class="Gender">
+            <span>State your Gender: </span><br>
+            <label for="Male">Male</label>>
+            <input type="radio" name="gender" value="Male" id="Male">
+            <label for="Female">Female</label>>
+            <input type="radio" name="gender" value="Female" id="Female">
+            <label for="Others">Others</label>>
+            <input type="radio" name="gender" value="Others" id="Others"><br><br>
+        </section>
+
+        <section class="Qualifications">
+            <span>State your Qualifications: </span><br>
+            <label for="School">School</label>>
+            <input type="checkbox" name="qual" value="School" id="School">
+            <label for="Graduate">Graduate</label>>
+            <input type="checkbox" name="qual" value="Graduate" id="Graduate">
+            <label for="Post-Graduate">Post-Graduate</label>>
+            <input type="checkbox" name="qual" value="Post-Graduate" id="Post-Graduate"><br><br>
+        </section>
+
+        <section class="Documents">
+            <span>Documents Available: </span><br>
+            <label for=">Voter ID">Voter ID</label>>
+            <input type="checkbox" name="Docs" value=">Voter ID" id=">Voter ID">
+            <label for="Aadhar Card">Aadhar Card</label>>
+            <input type="checkbox" name="Docs" value="Aadhar Card" id="Aadhar Card">
+            <label for="PAN Card">PAN Card</label>>
+            <input type="checkbox" name="Docs" value="PAN Card" id="PAN Card"><br><br>
+        </section>
+
+        <section class="Region">
+            <label for="region">Region</label>
+            <input list="regions" type="text" name="region" id="region"><br><br>
+            <datalist id="regions">
+                <option value="North"></option>
+                <option value="South"></option>
+                <option value="East"></option>
+                <option value="West"></option>
+            </datalist>
+        </section>
+
+        <section class="Submit">
+            <input type="Submit" value="Submit">
+        </section>
+    </form>
+    </center>
+</body>
+</html>
